@@ -1,0 +1,176 @@
+<!--vamos a crear nuestro primer index para la pagina. debemos llamarlo index (donde index es el nombre de documento y html la extension )para que el servidor lo tome como primer archivo. 
+luego creamos el archivo style.css  tambien vamos a crear carpeta para nuestras imagenes. 
+armamos la estructura basica de nustra pagina con la etiqueta doc. 
+ponemos ! este signo y ya nos deberia auto rellenar toda la estructura basica.
+--> 
+
+<!DOCTYPE html>  <!--  Es la etiqueta que define que el documento es HTML-->
+<html lang="es"> <!--  Es la principal etiqueta de una página HTML
+    aca cambiamos a español con las inciales es a que ayuda a los motores de búsqueda a comprender el idioma correcto de la página web-->
+<head> <!-- en esta etiqueta va a ir todo lo que no se ve es  la etiqueta que abre el bloque de información sobre la web--> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beautymakeup</title> <!--  aca completamos el titulo con el nombre de la tematica. el mismo aparece en el borde de la ventana del navegador.-->
+    <!-- ahora tenemos que llamar a la fuente en google.fonts  busco mi fuente agregue 400 300 y 700 copio y pego abjo de titulo para que cargue mas rapido y copio el codigo de css para luego ponerlo en mi css lo comento con *//* para usarlo luego-->     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><!-- aca vinculamos nuestros archivos. para saber si esta vinculado me acerco al href con el cursor y ponego seguir vinculo si nos redirecciona a nuestro archivo style todo quedo bien.-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body> <!--texto visible para el usuario
+    antes que nada vamos a poner nuestras primeras etiquetas
+    vamos armar nuestra estrura 
+    todo contenido dentro del body -->
+<header> <!--cabecera --> 
+    <div> <img src="img/1-logo-negro.png"  width="400" ><!--para agregar mi logo uso la etiqueta img, debo señalar mi carpeta de imagenes y mi imagen. agrego nombre a la misma. tambien uso el atributo width para cambiar el tamaño a mi logo/imagen. -->
+        <!--div es una etiqueta que define las divisiones Puede utilizar etiquetas div para centrar bloques de contenido, crear efectos de columna y crear diferentes áreas de color, entre otras posibilidades -->
+        <h1>Maquillajes Veganos </h1> <!--el H1 es una etiqueta que se utiliza para identificar aquellas frases que conforman el título principal de un contenido de una página web.14 may 2018 -->
+</header> 
+    </div>
+<nav>  <!-- navegacion--> 
+    <!-- aca armamos la botonera la barra de navegacion . lo hacemos con la etiqueta de lista-->
+    <ul> <!-- ul define una lista desordenada-->  
+        <li><a href="index.html">Servicios</a></li> <!-- LI declara cada uno de los elementos de una lista--> 
+        <li><a href="personajes.html">Productos</a></li>
+        <li><a href="temporadas.html">Temporadas</a></li>
+        <li><a href="memes.html">Historia</a></li> <!--crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL --> 
+    </ul>
+</nav>
+<main> <!--contenido principal-->
+    <div class="contieneimagen">
+    <h2>Productos Cruelty Free</h2>
+    <p>Somos una empresa de belleza 100% Argentina con mas de cuarenta años de trayectoria. encontra las mejores promos en nuestra tienda.
+    </p>
+    </div> 
+
+    <div class="galeria" id="">  <!--Para poner mi galeria de imagenes en mi pagina primero defino un div, para contener la imaganes.  uso la etiqueta img le agrego como atributo un width para que todas tengan el mismo tamaño. y luego me voy al css   -->
+        
+            <div>
+                <img src="img/img.jpg.jpg" alt="producto1"width="350px">
+                <div class="informacion">
+                    <p>producto 1</p>
+                    <p class="precio">$3000</p>
+                    <button>comprar</button>
+                        
+                </div>
+            </div>
+            <div>
+                <img src="img/img1.jpg.jpg" alt="producto2" width="350px">
+        
+                <div class="informacion">
+                    <p>producto 2</p>
+                    <p class="precio">$3000</p>
+                    <button>comprar</button>
+        
+                </div>
+            </div>
+            <div>
+                <img src="img/img2.jpg.jpg" alt="producto3"width="350px">
+                <div class="informacion">
+                    <p>producto 3</p>
+                    <p class="precio">$3000</p>
+                    <button>comprar</button>
+        
+                </div>
+            </div>
+            
+        
+    </div>
+            
+            
+            <div class="contenedorr">
+                <h3>Contacto</h3>
+                <form action="" class="formulario">
+
+                       <input type="text"  class="inputt">
+                       <label for="" class="label">nombre</label>    
+                        
+                        <input type="text"  class="inputt">
+                        <label for="" class="label">correo</label>
+                        
+                         <input type="text"  class="inputt">
+                        <label for="" class="label">telefono</label>
+                       
+                        <input type="text"  class="inputt">
+                        <label for="" class="label">mensaje</label>
+                        
+                
+                
+                        <input type="submit" value="Enviar" class="submit">
+                </form>
+                
+                        <!--  <input type="text" name="" class="inputt" >  
+                        <label for="correo">Correo</label>
+
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="">mensaje</textarea>
+
+                        <p class="boton"> <input type="submit" value="Enviar" class="submit"></p>
+                   -->
+                    
+
+                        
+                
+                
+            </div>
+            <div> 
+                
+<main> <!---->
+
+                <h6>suma tus productos</h6> 
+                <input type="number"  id="num1">
+                <input type="number"  id="num2">
+
+                
+                <button onclick='mifuncion()'>calcular</button> <!-- aca llamamos  a nuestra funcion  --> 
+                <p id="sumando"></p>
+
+            </div>
+
+            
+            <!--   <script>
+                function mifuncion(){
+                    var x,y,suma,text;
+
+                    x = document.getElementById("num1").value;
+                    y = document.getElementById("num2").value;
+                    
+                    suma = parseFloat(x)+parseFloat(y);
+
+                    text= suma;
+
+                    document.getElementById("sumando").innerHTML = text;
+                }
+
+            </script> -->
+            
+           
+</main>
+
+
+
+<footer> <!--pie de pagina el footer, el pie de pagina
+    donde agregamos las redes sociales y el diseñador de la pagina -->
+    <p>Diseñado por Brenda Ohannecian -©año</p> <!--Representa un párrafo de texto y se utiliza para separar bloques de texto en una página -->  
+
+    
+ <!--una vez que tenemos los elementos principales, vamos a trabajar con la hoja de estilo, como va hacer la cabecera, la navegacion  y el footer  "IR A ARCHIVO STYLO.CSS"-->
+ 
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-youtube'></i>
+    
+<!-- Para poner iconos de redes usamos Boxicons.com es una página web que nos permite acceder a un conjunto de iconos vectoriales sencillos, elaborados cuidadosamente para que los diseñadores y desarrolles puedan utilizarlos en sus proyectos vamos a la pagina -->
+
+
+
+</footer>
+<!--aca comienza mi script--> 
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

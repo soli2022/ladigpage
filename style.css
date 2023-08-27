@@ -1,0 +1,194 @@
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/ 
+
+/* ¿Cómo se trabaja el CSS?
+
+CSS funciona como complemento a la información que forma parte de un sitio web. Mientras que el código en HTML incluye todos los datos, el código en CSS se encarga de darles formato y presentarlos visualmente a través de un navegador.*/ 
+
+/* ahora agrego el font-famili a mi hoja stilo y se lo agrego al body,*/ 
+
+body{ 
+    font-family: 'Open Sans', sans-serif;  
+    font-size: 16px;
+    line-height: 20px;/*separacion*/ 
+}/**/ 
+header{ /*ahora trabajamos la cabecera*/ 
+background-color: #c28736; /*con esta propiedad puedo darle color   a una seccion o puedo rellenar el interior de un control*/  
+padding: 16px 0; /*cantidad de espacio entre el borde y el contenido del elemento*/  
+}
+
+header h1{ /*para poder una etequeta que esta debtro de otra primero llamo a etiqueta padre "heard"y luego al hijo "h1"*/ 
+    color: #000;
+    font-size: 40px;
+    font-weight: 100;
+    display: inline-block; /*con el display acomoda los elementos uno al lado de otro */ 
+    position: relative;
+    bottom: 170px;/*el posicionamiento acomodo el h1 al lado del logo, agrego el atributo relativo para que quede fijo, y con bottom le digo cuanto subo ese h1 osea especifico parte de la posición de un elemento */
+    }
+
+    nav{
+
+    }
+    nav{
+        background-color: #c28736;/* agrego mismo color para que quede igual que la cabaza */
+        margin: bottom 20px; ;
+    }
+    nav ul{
+        list-style: none; /*con esta propiedad saco los puntitos en mi lista, saco margen, saco padding y agrego un dyspley flex para acomodar una al lado le otro mi navegacion */
+        list-style: none;
+        padding: 0;
+        margin:0;
+        display:flex;}
+    
+        nav ul li{/*voy llamando de mayor a menor a mayor hasta la que quiera trabajar */
+            flex-grow:1;/*con esta propiedad hago que crezca el elemnto de a uno y se acomode la barra la navegacion */ 
+            
+            /*color: #000;
+            text-decoration: none;saco toda decoracion en mis texto/barra de navegacion: */ 
+        }
+        nav ul li a{/* display para acomodar se arme bien la caja saco decoracion*/
+            color: #000;
+            text-decoration: none;
+            padding: 10px 2px;
+            display: block;
+            text-align: center;
+        }
+        
+        main .galeria{
+            display: flex;
+            margin:0, 40px ;
+            justify-content:center ;
+            padding: 40px;
+            object-fit: cover;
+            border-radius: 20px 20px 0px 0px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .informacion button{
+            background-color: #c28736;
+            width: 100px;
+            height: 35;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 300;
+            cursor: pointer;
+            }
+        
+            footer{
+
+        background-color: #c28736; /**/
+        clear: both;
+        color: #000;
+        text-align:left;
+        padding: auto;
+        margin-top:auto;
+        text-align: center;
+        }
+        .contieneimagen{
+        background: url(/img/fondo.jpg.jpg);
+       
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 300px;
+        }
+        h2{
+            font-style: #000;
+            font-size: 50px;
+            position: relative;
+            bottom: 60px
+            
+        }
+        p{
+            font-style: #000;
+            font-size: 30px;
+            text-align: center;
+            }
+
+        .galeria{ /*usamos la clase, usamos el displey flex para ponerlas una al lado de la otra. alineamos en el centro justify center y separamos con margin 0 para los lados arriba y abajo  y 40 de izquierda a derecha */
+            display: flex;
+            margin:0, 40px ;
+            justify-content:center ;
+
+            }
+           
+
+
+            h3{
+                text-align: center;
+
+            }
+       .contenedorr .formulario{
+            width: 500px;
+            max-width: 100%;
+            margin: auto;
+            
+            margin-top: 30px;
+            padding: 20px;
+            box-shadow: 0 0 20px  1px rosybrown;
+            color: #000;
+            
+            position: relative;
+            display: block;
+            
+            }
+           
+              .formulario{
+                width: 500px;
+                max-width: 100%;
+                margin: auto;
+                margin-top: 30px;
+                padding: 20px;
+                box-shadow:  0 0 20px 1px;
+              }
+        
+            .inputt,.submit, .label{
+               display: block;
+                width: 100%;
+                font-size: 1.3em;
+            }
+            .label{
+                padding-left: 15px;
+                position: absolute;
+                margin-top: auto;
+                z-index: -20;
+                margin: -85;
+                transition: all 0.2s;
+            }
+            .inputt{
+                padding: 20px;
+                background-color: transparent;
+                margin-bottom: 40px;
+            }
+            .submit{
+                background-color: #c28736;
+                padding: 10px 20px;
+                cursor: pointer;
+                border: none;
+                }
+            
+                .inputt:focus {
+                outline: 1px solid ;
+            }
+            
+            .inputt:focus + .label{
+                margin-top: -135px ;
+            }
+
+            
+           
+            .contenedorr p {
+                display: flex;
+            }
+    
+
+    
+            
+    
+        
+
+        
+
+        
+        
+/**/
